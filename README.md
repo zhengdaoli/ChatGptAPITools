@@ -39,13 +39,13 @@ Enter the news article you'd like to summarize:
 ``` 
 最后把新闻内容复制粘贴内容到终端，回车即可。
 
-另外一种方式是用您的其它程序调用`news.py`里面的函数:
+另外一种方式是用您的其它程序调用`ask.py`里面的函数:
 
 ```
 import ask
 
 news = 'ChatGPT4.0 is released today!'
-ask.summary_news(news)
+print(ask.summary_news(news))
 
 ```
 
