@@ -1,14 +1,14 @@
 import openai
 import re
-
+import default_prompts
 # Set up OpenAI API credentials
-openai.api_key = "INSERT_YOUR_API_KEY_HERE"
+
 
 
 # Define function to summarize an article based on a prompt
-def summarize_article(article, prompt=""):
-    # Set up the prompt and article for the GPT-3 API request
-    text = prompt + '\n\n' + article
+
+def summarize_article(article, prompt=default_prompts.Commentariat):    # Set up the prompt and article for the GPT-3 API request
+    text = prompt + '\n\n' +'please summary and give opinion on this article:' + article
     # Use OpenAI's GPT-3 API to generate a summary
     response = openai.Completion.create(
       engine="text-davinci-002",
