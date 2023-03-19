@@ -14,6 +14,8 @@
 
 等等.
 
+
+
 # 入门指南
 
 要使用这个仓库中的工具和应用程序，您需要从OpenAI获取API密钥。您可以在OpenAI网站上注册API密钥。
@@ -44,6 +46,7 @@ news_summary.summary_news(news)
 
 
 # 贡献
+大部分default prompt 来源于: https://github.com/f/awesome-chatgpt-prompts
 
 我们欢迎社区的贡献，以改进和扩展这个仓库中的工具和应用程序。如果您有新工具或功能的想法，请随时打开问题或提交拉取请求。
 
