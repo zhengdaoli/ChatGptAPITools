@@ -12,9 +12,13 @@
 
 手稿润色：帮助我们提高写作水平，提供建议，包括语法、风格和语气等。这对需要撰写清晰简明文件的专业人士尤其有用。
 
-等等.
+等等， 持续更新，欢迎贡献.
 
+# repo结构
 
+`ask.py`: 所有问法
+`default_prompts.py`: 所有默认调教的prompt
+`main.py`: 调用例子
 
 # 入门指南
 
@@ -24,9 +28,10 @@
 
 # 例子：
 
+
 比如要提炼一段新闻的内容，直接运行:
 ```
-python news_summary/news.py
+python main.py
 ```
 然后terminal会有如下提示：
 ```
@@ -37,10 +42,10 @@ Enter the news article you'd like to summarize:
 另外一种方式是用您的其它程序调用`news.py`里面的函数:
 
 ```
-import news_summary
+import ask
 
 news = 'ChatGPT4.0 is released today!'
-news_summary.summary_news(news)
+ask.summary_news(news)
 
 ```
 
