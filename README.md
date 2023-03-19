@@ -31,9 +31,12 @@
 
 # repo结构
 
-`ask.py`: 所有问法
+`ask.py`: 所有问法 
+
 `default_prompts.py`: 所有默认调教的prompt
+
 `main.py`: 调用例子
+
 
 # 入门指南
 
