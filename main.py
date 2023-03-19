@@ -15,6 +15,9 @@ print(ask.ask(query))
 article = input("Enter the news article you'd like to summarize and give some opinion: ")
 print(ask.summarize_article(article))
 
+article = input("输入你想翻译的内容: ")
+print(ask.translate2english(article))
+
 movie = input("Enter the movie name you want to give some reviews:")
 print(ask.movie_critic(movie))
 
