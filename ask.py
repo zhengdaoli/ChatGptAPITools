@@ -109,3 +109,9 @@ def generate_leave_of_absence_prompt(reason, recipient, prompt=default_prompts.I
     """
     text =  prompt + '\n\n' + f"Write a leave of absence letter to {recipient} requesting a leave of absence starting on [start date] until [end date]. The reason for the absence is {reason}."
     return ask(text)
+
+
+# 科学问题
+def response_scientific_question(question, prompt=default_prompts.Scientist):
+    text =  prompt + '\n\n' + f" answer my question and give some explainations and suggestions, my question is: {question}"
+    return ask(text)
